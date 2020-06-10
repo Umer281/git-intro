@@ -19,7 +19,9 @@ def submit ():
 	if request.method=='POST':
 	  name=request.form['username']
 	return "<h> hello {}".format(name)
-
+@app.route('/dashboard')
+def dashboard():
+       print("hello coder")
 
 
 if __name__=='__main__':
